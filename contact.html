@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact with Map Template | PrepBootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
      <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -94,7 +94,7 @@
                         </div>
                         <hr />
                         <div id="map1" class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49165.25290096483!2d22.389126580284046!3d39.63106954787999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1358885c595d47a1%3A0x400bd2ce2b99c30!2zzpvOrM-BzrnPg86x!5e0!3m2!1sel!2sgr!4v1454917319419" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div id="googleMap" style="width:500px;height:380px;"></div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
 <script type="text/javascript">
     jQuery(function ($) {
         function init_map1() {
-            var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
+            var myLocation = new google.maps.LatLng(39.65286, 22.43471);
             var mapOptions = {
                 center: myLocation,
                 zoom: 16
